@@ -5,9 +5,9 @@ import { AppComponent } from './app.component';
 
 
 const routes: Routes = [
-  { path: '', component: AppComponent },     // Default route, maps to AppComponent
-  { path: 'contact', component: ContactComponent },
-  { path: 'skills', component: ContactComponent },
+  { path: 'PersonalWebsite/', component: AppComponent },     // Default route, maps to AppComponent
+  { path: 'PersonalWebsite/contact', component: ContactComponent },
+  { path: 'PersonalWebsite/skills', component: ContactComponent },
 ];
 
 @NgModule({
