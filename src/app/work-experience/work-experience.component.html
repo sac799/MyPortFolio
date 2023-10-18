@@ -1,0 +1,17 @@
+<div class="container mt-4">
+    <h2 class="mb-4">Work Experience</h2>
+    <div class="row">
+      <div class="col-md-4 mb-4">
+        <img src="assets/exp.jpg" class="img-fluid" alt="Work Experience Image">
+      </div>
+      <div class="col-md-8 mb-4">
+        <div *ngFor="let experience of workExperience" class="mb-4">
+          <h4>{{ experience.position }}</h4>
+          <p><strong>{{ experience.company }}</strong></p>
+          <p>{{ experience.date }}</p>
+          <p>{{ experience.description }}</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  

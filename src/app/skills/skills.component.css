@@ -169,7 +169,6 @@ body {
     width: 90%;
   }
 }
-/*Edit here for Photoshop*/
 .bar-fill-photoshop {
   width: 70%;
   background-color: #0a73dc;
@@ -238,5 +237,40 @@ body {
 
   100% {
     width: 90%;
+  }
+}
+
+.bar-fill-angular {
+  width: 75%;
+  background-color: #0a73dc;
+  animation: bar-fill-photoshop 2s ease-out;
+  -moz-animation: bar-fill-photoshop 2s ease-out;
+  -webkit-animation: bar-fill-photoshop 2s ease-out;
+}
+@keyframes bar-fill-angular {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 75%;
+  }
+}
+@-moz-keyframes bar-fill-angular {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 75%;
+  }
+}
+@-webkit-keyframes bar-fill-angular {
+  0% {
+    width: 0px;
+  }
+
+  100% {
+    width: 75%;
   }
 }

@@ -17,10 +17,11 @@ export class SkillsComponent implements OnInit {
     { id: 8, name: 'CSS' },
     { id: 9, name: 'SQL' },
     { id: 10, name: 'Entity Framework' }
-
-
-    // Add more skills as needed
   ];
+  cSharpProficiency: number = 90;
+  cSharp: string ="C#";
+  angular: string ="Angular";
+  angularPercentage: number = 75;
   constructor() {}
 
   ngOnInit(): void {}
