@@ -16,11 +16,11 @@ export class SkillsComponent implements OnInit {
     { id: 7, name: 'HTML' },
     { id: 8, name: 'CSS' },
     { id: 9, name: 'SQL' },
-    { id: 10, name: 'Entity Framework' }
+    { id: 10, name: 'Entity Framework' },
   ];
   cSharpProficiency: number = 90;
-  cSharp: string ="C#";
-  angular: string ="Angular";
+  cSharp: string = 'C#';
+  angular: string = 'Angular';
   angularPercentage: number = 75;
   constructor() {}
 
