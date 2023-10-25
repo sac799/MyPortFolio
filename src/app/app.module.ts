@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { AppRoutingModule } from './app-routing.module';
 import { SkillsComponent } from './skills/skills.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
+import { AcademicProjectsComponent } from './academic-projects/academic-projects.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +16,8 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
     ContactComponent,
     HomeComponent,
     SkillsComponent,
-    WorkExperienceComponent
+    WorkExperienceComponent,
+    AcademicProjectsComponent
   ],
   imports: [
     BrowserModule,

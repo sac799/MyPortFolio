@@ -1,0 +1,58 @@
+.work-experience-card {
+    background-color: #007bff;
+    color: white;
+    border-radius: 5px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+    padding: 15px;
+    margin: 10px;
+    width: 300px; /* Set the desired width */
+    height: 200px; /* Set the desired height */
+  }
+  /* CSS for modal backdrop */
+.modal-backdrop {
+    opacity: 0.5;
+  }
+  
+  /* Add custom class for modal animation */
+  .fade {
+    transition: opacity 0.5s;
+  }
+  
+  /* Style the modal title */
+  .modal-title {
+    font-size: 20px;
+    font-weight: bold;
+    text-transform: capitalize;
+  }
+  
+  /* Style the modal body */
+  .modal-body {
+    font-size: 16px;
+  }
+  
+  /* Custom CSS for modal animations */
+.modal.fade .modal-dialog {
+    transform: translate(0, -50%);
+    opacity: 0;
+    transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
+  }
+  
+  .modal.fade.show .modal-dialog {
+    transform: translate(0, 0);
+    opacity: 1;
+  }
+  
+  .modal-open {
+    filter: blur(5px); /* Add your desired blur amount */
+  }
+  .blur-background {
+    filter: blur(5px); /* Adjust the blur strength as needed */
+    transition: filter 0.3s ease-in-out; /* Add a transition for a smooth effect */
+  }
+  /* Add this CSS to your component's styles or global styles */
+/* Add this CSS to your component's styles or global styles */
+.custom-image {
+    max-width: 100%;
+    height: 250px; /* Set your desired height here */
+}
+  
