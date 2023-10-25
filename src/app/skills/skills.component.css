@@ -1,276 +1,135 @@
-body {
-  font-size: 12px;
-  font-family: "Roboto", sans-serif;
+CSS.g-6,
+.gx-6 {
+  --bs-gutter-x: 4.5rem;
 }
-.container-skills {
-  margin: 20px auto 0 auto;
-  max-width: 400px;
+.g-6,
+.gy-6 {
+  --bs-gutter-y: 4.5rem;
+}
+@media (min-width: 576px) {
+  .g-sm-6,
+  .gx-sm-6 {
+    --bs-gutter-x: 4.5rem;
+  }
+  .g-sm-6,
+  .gy-sm-6 {
+    --bs-gutter-y: 4.5rem;
+  }
+}
+@media (min-width: 768px) {
+  .g-md-6,
+  .gx-md-6 {
+    --bs-gutter-x: 4.5rem;
+  }
+  .g-md-6,
+  .gy-md-6 {
+    --bs-gutter-y: 4.5rem;
+  }
+}
+@media (min-width: 992px) {
+  .g-lg-6,
+  .gx-lg-6 {
+    --bs-gutter-x: 4.5rem;
+  }
+  .g-lg-6,
+  .gy-lg-6 {
+    --bs-gutter-y: 4.5rem;
+  }
+}
+@media (min-width: 1200px) {
+  .g-xl-6,
+  .gx-xl-6 {
+    --bs-gutter-x: 4.5rem;
+  }
+  .g-xl-6,
+  .gy-xl-6 {
+    --bs-gutter-y: 4.5rem;
+  }
+}
+@media (min-width: 1400px) {
+  .g-xxl-6,
+  .gx-xxl-6 {
+    --bs-gutter-x: 4.5rem;
+  }
+  .g-xxl-6,
+  .gy-xxl-6 {
+    --bs-gutter-y: 4.5rem;
+  }
+}
+.mb-6 {
+  margin-bottom: 4.5rem !important;
+}
+.py-6 {
+  padding-top: 4.5rem !important;
+  padding-bottom: 4.5rem !important;
+}
+.w-65 {
+  width: 65% !important;
+}
+.w-85 {
+  width: 85% !important;
+}
+.w-95 {
+  width: 95% !important;
+}
+@media (min-width: 576px) {
+  .mb-sm-6 {
+    margin-bottom: 4.5rem !important;
+  }
+  .py-sm-6 {
+    padding-top: 4.5rem !important;
+    padding-bottom: 4.5rem !important;
+  }
+}
+@media (min-width: 768px) {
+  .mb-md-6 {
+    margin-bottom: 4.5rem !important;
+  }
+  .py-md-6 {
+    padding-top: 4.5rem !important;
+    padding-bottom: 4.5rem !important;
+  }
+}
+@media (min-width: 992px) {
+  .mb-lg-6 {
+    margin-bottom: 4.5rem !important;
+  }
+  .py-lg-6 {
+    padding-top: 4.5rem !important;
+    padding-bottom: 4.5rem !important;
+  }
+}
+@media (min-width: 1200px) {
+  .mb-xl-6 {
+    margin-bottom: 4.5rem !important;
+  }
+  .py-xl-6 {
+    padding-top: 4.5rem !important;
+    padding-bottom: 4.5rem !important;
+  }
+}
+@media (min-width: 1400px) {
+  .mb-xxl-6 {
+    margin-bottom: 4.5rem !important;
+  }
+  .py-xxl-6 {
+    padding-top: 4.5rem !important;
+    padding-bottom: 4.5rem !important;
+  }
 }
 
-.bar {
-  position: relative;
-  background-color: #d8d8d8;
-  height: 10px;
-  margin: 0 0 20px 0;
-}
-.bar-fill {
-  position: absolute;
-  height: 10px;
-}
-.bar-title {
-  position: relative;
-  font-size: 1em;
-  text-align: left;
-  margin: 0 0 5px 0;
-}
-.percent {
-  position: absolute;
-  right: 0;
+.card {
+  animation: slide-in 0.5s ease-in-out;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
-/* Animations Below - Replace ease-out with infinite for infinite loop*/
-/*Edit here for html*/
-.bar-fill-html {
-  width: 90%;
-  background-color: #0a73dc;
-  animation: bar-fill-html 2s ease-out;
-  -moz-animation: bar-fill-html 2s ease-out;
-  -webkit-animation: bar-fill-html 2s ease-out;
-}
-@keyframes bar-fill-html {
+@keyframes slide-in {
   0% {
-    width: 0px;
+    transform: translateX(-50px);
+    opacity: 0;
   }
-
   100% {
-    width: 90%;
-  }
-}
-@-moz-keyframes bar-fill-html {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 90%;
-  }
-}
-@-webkit-keyframes bar-fill-html {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 90%;
-  }
-}
-/*Edit here for Javascript*/
-.bar-fill-javascript {
-  width: 75%;
-  background-color: #0a73dc;
-  animation: bar-fill-javascript 2s ease-out;
-  -moz-animation: bar-fill-javascript 2s ease-out;
-  -webkit-animation: bar-fill-javascript 2s ease-out;
-}
-@keyframes bar-fill-javascript {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 75%;
-  }
-}
-@-moz-keyframes bar-fill-javascript {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 60%;
-  }
-}
-@-webkit-keyframes bar-fill-javascript {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 60%;
-  }
-}
-/*Edit here for Jquery*/
-.bar-fill-jquery {
-  width: 60%;
-  background-color: #0a73dc;
-  animation: bar-fill-jquery 2s ease-out;
-  -moz-animation: bar-fill-jquery 2s ease-out;
-  -webkit-animation: bar-fill-jquery 2s ease-out;
-}
-@keyframes bar-fill-jquery {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 60%;
-  }
-}
-@-moz-keyframes bar-fill-jquery {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 70%;
-  }
-}
-@-webkit-keyframes bar-fill-jquery {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 70%;
-  }
-}
-/*Edit here for Responsive*/
-.bar-fill-responsive {
-  width: 90%;
-  background-color: #0a73dc;
-  animation: bar-fill-responsive 2s ease-out;
-  -moz-animation: bar-fill-responsive 2s ease-out;
-  -webkit-animation: bar-fill-responsive 2s ease-out;
-}
-@keyframes bar-fill-responsive {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 90%;
-  }
-}
-@-moz-keyframes bar-fill-responsive {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 90%;
-  }
-}
-@-webkit-keyframes bar-fill-responsive {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 90%;
-  }
-}
-.bar-fill-photoshop {
-  width: 70%;
-  background-color: #0a73dc;
-  animation: bar-fill-photoshop 2s ease-out;
-  -moz-animation: bar-fill-photoshop 2s ease-out;
-  -webkit-animation: bar-fill-photoshop 2s ease-out;
-}
-@keyframes bar-fill-photoshop {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 70%;
-  }
-}
-@-moz-keyframes bar-fill-photoshop {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 70%;
-  }
-}
-@-webkit-keyframes bar-fill-photoshop {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 70%;
-  }
-}
-
-/*Edit here for SQL*/
-.bar-fill-sql {
-  width: 90%;
-  background-color: #0a73dc;
-  animation: bar-fill-photoshop 2s ease-out;
-  -moz-animation: bar-fill-photoshop 2s ease-out;
-  -webkit-animation: bar-fill-photoshop 2s ease-out;
-}
-@keyframes bar-fill-sql {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 90%;
-  }
-}
-@-moz-keyframes bar-fill-sql {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 90%;
-  }
-}
-@-webkit-keyframes bar-fill-sql {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 90%;
-  }
-}
-
-.bar-fill-angular {
-  width: 75%;
-  background-color: #0a73dc;
-  animation: bar-fill-photoshop 2s ease-out;
-  -moz-animation: bar-fill-photoshop 2s ease-out;
-  -webkit-animation: bar-fill-photoshop 2s ease-out;
-}
-@keyframes bar-fill-angular {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 75%;
-  }
-}
-@-moz-keyframes bar-fill-angular {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 75%;
-  }
-}
-@-webkit-keyframes bar-fill-angular {
-  0% {
-    width: 0px;
-  }
-
-  100% {
-    width: 75%;
+    transform: translateX(0);
+    opacity: 1;
   }
 }

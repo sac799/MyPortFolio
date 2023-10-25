@@ -1,76 +1,16 @@
-<div class="container">
-  <div class="row">
-    <div class="col-md-6">
-      <img src="assets/skill.jpg" class="img-fluid" alt="Background Image"
-        style="width: 90%; max-height: 90vh; object-fit: contain;">
-    </div>
-    <div class="col-md-6  mt-4">
-      <div class="responsive-design">
-        <p class="bar-title">
-          {{ cSharp }}
-          <span class="percent align-right">{{ cSharpProficiency }}%</span>
-        </p>
-        <div class="bar">
-          <div class="bar-fill bar-fill-responsive start"></div>
+<!-- app.component.html -->
+<div class="centered-container">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-4 mt-2" *ngFor="let role of roles">
+        <div class="card">
+          <img [src]="role.image" class="card-img-top" [alt]="role.title + ' Image'">
+          <div class="card-body">
+            <h5 class="card-title">{{ role.title }}</h5>
+            <p class="card-text">{{ role.description }}</p>
+          </div>
         </div>
       </div>
-      <div class="angular">
-        <p class="bar-title">
-          {{angular}}
-          <span class="percent align-right">{{angularPercentage}}%</span>
-        </p>
-        <div class="bar">
-          <div class="bar-fill bar-fill-angular start"></div>
-        </div>
-      </div>
-      <div class="photoshop">
-        <p class="bar-title">
-          .Net Core
-          <span class="percent align-right">70%</span>
-        </p>
-        <div class="bar">
-          <div class="bar-fill bar-fill-photoshop start"></div>
-        </div>
-      </div>
-
-
-      <div class="html">
-        <p class="bar-title">
-          HTML / HTML5 & CSS
-          <span class="percent align-right">90%</span>
-        </p>
-        <div class="bar">
-          <div class="bar-fill bar-fill-html start"></div>
-        </div>
-      </div>
-      <div class="javascript">
-        <p class="bar-title">
-          Javascript
-          <span class="percent align-right">75%</span>
-        </p>
-        <div class="bar">
-          <div class="bar-fill bar-fill-javascript start"></div>
-        </div>
-      </div>
-      <div class="jquery">
-        <p class="bar-title">
-          JQuery
-          <span class="percent align-right">60%</span>
-        </p>
-        <div class="bar">
-          <div class="bar-fill bar-fill-jquery start"></div>
-        </div>
-      </div>
-      <div class="sql">
-        <p class="bar-title">
-          SQL
-          <span class="percent align-right">90%</span>
-        </p>
-        <div class="bar">
-          <div class="bar-fill bar-fill-sql start"></div>
-        </div>
-      </div>
-
     </div>
   </div>
 </div>
