@@ -6,6 +6,7 @@ import { HomeComponent } from './home/home.component';
 import { SkillsComponent } from './skills/skills.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { AcademicProjectsComponent } from './academic-projects/academic-projects.component';
+import { BlogsComponent } from './blogs/blogs.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent }, // Default route, maps to AppComponent
@@ -13,6 +14,7 @@ const routes: Routes = [
   { path: 'skills', component: SkillsComponent },
   { path: 'work-experience', component: WorkExperienceComponent },
   { path: 'academic-projects', component: AcademicProjectsComponent },
+  { path: 'blogs', component: BlogsComponent }
 ];
 
 @NgModule({

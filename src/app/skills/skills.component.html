@@ -1,5 +1,4 @@
-<!-- app.component.html -->
-<div class="centered-container">
+<div class="centered-container" [ngClass]="{ 'blur-background': showModal }">
   <div class="container">
     <div class="row">
       <div class="col-md-4 mt-2" *ngFor="let role of roles">
@@ -8,8 +7,34 @@
           <div class="card-body">
             <h5 class="card-title">{{ role.title }}</h5>
             <p class="card-text">{{ role.description }}</p>
+            <button class="btn btn-primary" (click)="openModal(role)">Open Modal</button>
           </div>
         </div>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="modal" [ngClass]="{ 'show': showModal, 'd-block': showModal }" id="descriptionModal" tabindex="-1"
+  role="dialog" aria-labelledby="descriptionModalLabel" aria-hidden="true">
+  <div class="modal-dialog modal-lg" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="descriptionModalLabel"> {{selectedRole?.title}}</h5>
+
+        <button type="button" class="close" (click)="closeModal()">
+          <span aria-hidden="true">&times;</span>
+
+        </button>
+      </div>
+      <div class="modal-body">
+        <div class="skills-container">
+          <div *ngFor="let skill of selectedRole?.techSkills" class="skill-item">
+            {{ skill.name }}
+          </div>
+        </div>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary close" (click)="closeModal()">Close</button>
       </div>
     </div>
   </div>

@@ -1,0 +1,25 @@
+ <div *ngFor="let card of blogCards" class="blog-card">
+    <div class="meta">
+      <div class="photo">
+        <img [src]="card.imageSrc" class="image-fit" alt="Background Image">
+      </div>
+      <ul class="details">
+        <li class="author"><a href="#">{{ card.author }}</a></li>
+        <li class="date">{{ card.date }}</li>
+        <li class="tags">
+          <ul>
+            <li *ngFor="let tag of card.tags"><a href="#">{{ tag }}</a></li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+    <div class="description">
+      <h1>{{ card.title }}</h1>
+      <h2>{{ card.subTitle }}</h2>
+      <p>{{ card.content }}</p>
+      <p class="read-more">
+        <a [href]="card.link" target="_blank">Read More</a>
+      </p>
+    </div>
+  </div>
+  

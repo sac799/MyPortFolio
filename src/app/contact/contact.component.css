@@ -49,3 +49,32 @@ a {
   margin-right: 10px; /* Add margin to create space between images */
   cursor: pointer; /* Add pointer cursor for user interaction */
 }
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%; /* Make it a circle */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  animation: pulse 2s infinite; /* Add a pulsating animation */
+}
+
+.icons {
+  width: 150px;
+  height: 150px;
+  /* Your existing styles for the icon */
+  /* ... */
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
