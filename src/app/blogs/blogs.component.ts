@@ -21,7 +21,7 @@ export class BlogsComponent implements OnInit {
     },
     {
       imageSrc: 'assets/github-image.png',
-      author: 'Sachin Patil',
+      author: 'Sachin Patil ',
       date: 'Oct. 26, 2023',
       tags: ['Learn', 'GitHub', 'Deployment', 'GitHub Pages'],
       title: 'Deploying Your Angular App on GitHub Pages for Free',
