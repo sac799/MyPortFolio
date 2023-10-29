@@ -1,15 +1,18 @@
 <div class="centered-container" [ngClass]="{ 'blur-background': showModal }">
   <div class="container">
     <div class="row">
-      <div class="col-md-4 mt-2" *ngFor="let role of roles">
+      <div class="col-md-3 mt-2" *ngFor="let role of roles">
         <div class="card">
-          <img [src]="role.image" class="card-img-top" [alt]="role.title + ' Image'">
-          <div class="card-body">
+          <img [src]="role.image" class="card-img-top" style="height: 250px;" [alt]="role.title + ' Image'">
+          <div class="card-body" style="height: 200px; overflow-y: auto;">
             <h5 class="card-title">{{ role.title }}</h5>
             <p class="card-text">{{ role.description }}</p>
+          </div>
+          <div class="card-footer">
             <button class="btn btn-primary" (click)="openModal(role)">Show More</button>
           </div>
         </div>
+
       </div>
     </div>
   </div>
@@ -20,10 +23,8 @@
     <div class="modal-content">
       <div class="modal-header">
         <h5 class="modal-title" id="descriptionModalLabel"> {{selectedRole?.title}}</h5>
-
         <button type="button" class="close" (click)="closeModal()">
           <span aria-hidden="true">&times;</span>
-
         </button>
       </div>
       <div class="modal-body">

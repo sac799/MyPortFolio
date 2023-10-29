@@ -8,26 +8,40 @@ import { Component, OnInit } from '@angular/core';
 export class SkillsComponent implements OnInit {
   roles = [
     {
-      title: 'Software Developer',
+      title: 'Software Developer(Backend)',
       description:
         'A highly skilled software developer with expertise in various programming languages and frameworks. Experienced in creating web and mobile applications, solving complex problems, and collaborating in a team environment.',
       image: 'assets/web-dev.jpg',
       techSkills: [
         { name: 'MVC' },
         { name: 'C#' },
-        { name: '.Net Core' },
+        { name: 'ASP.Net Core' },
+        { name: 'SQL' },
+        { name: 'No-SQL' },
+        { name: 'Elastic Search' },
+        { name: 'RabbitMQ' },
+        { name: 'Entity Framework Core' },
+        { name: 'LINQ' },
+        { name: 'Microservices ' },
+        { name: 'Web APIs' },
+        { name: 'Unit Testing' },
+      ],
+    },
+    {
+      title: 'Software Developer(Frontend)',
+      description:
+        'A highly skilled software developer with expertise in various programming languages and frameworks. Experienced in creating web and mobile applications, solving complex problems, and collaborating in a team environment.',
+      image: 'assets/web-dev.jpg',
+      techSkills: [
         { name: 'Angular' },
         { name: 'React' },
         { name: 'JavaScript' },
+        { name: 'jQuery' },
         { name: 'TypeScript' },
-        { name: 'HTML4' },
+        { name: 'HTML5' },
         { name: 'CSS3' },
-        { name: 'SQL' },
-        { name: 'No-SQL' },
-        { name: 'Entity Framework' },
-        { name: 'Microservices ' },
-        { name: 'Web APIs' },
-        { name: 'Web APIs' },
+        { name: 'Bootstrap UI' },
+        { name: 'Tailwind CSS' },
       ],
     },
     {
@@ -52,11 +66,22 @@ export class SkillsComponent implements OnInit {
         { name: 'Pytorch' },
         { name: 'PySpark' },
         { name: 'Text Processing' },
-        { name: 'Image Processing' },
         { name: 'Power BI' },
         { name: 'Tableau' },
       ],
     },
+    {
+      title: 'EXTRACURRICULAR',
+      description:
+        'Extracurricular activities refer to any organized or informal pursuits that students engage in outside of their regular academic curriculum. These activities provide students with opportunities to explore their interests, develop new skills, and broaden their horizons. ',
+      image: 'assets/ec.jpg',
+      techSkills: [
+        { name: 'Student Ambassador at Manchester Metropolitan University' },
+        { name: 'CO-Facilitator at Science & Engineering Club' },
+        { name: 'Finalist at Smart India Hackathon, 2017 Ogranised by Government of India' },
+        { name: 'Welcome Representative at Manchester Metropolitan University' }
+      ],
+    }
   ];
 
   constructor() {}

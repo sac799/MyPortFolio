@@ -30,6 +30,17 @@ export class BlogsComponent implements OnInit {
         'If you’ve developed an Angular application and are looking for a simple and cost-effective way to share it with the world, GitHub Pages is an excellent choice.',
       link: 'https://medium.com/@sacpatil799/deploying-your-angular-app-on-github-pages-for-free-df3368b282b8',
     },
+    {
+      imageSrc: 'assets/coding.jpg',
+      author: 'Sachin Patil ',
+      date: 'Oct. 29, 2023',
+      tags: ['Learn', 'Coding', 'Software Development', 'Coding Standards'],
+      title: 'The Code Whisperer’s Guide: Best Practices for Code that Endures',
+      subTitle: 'Learn effective way to code.',
+      content:
+        'Coding practices are the foundation of software development. Whether you’re a seasoned programmer or just starting, following best coding practices is essential for writing code that is maintainable, efficient, and less error-prone.',
+      link: 'https://medium.com/@sacpatil799/the-code-whisperers-guide-best-practices-for-code-that-endures-83417095fd30',
+    }
   ];
   constructor() {}
 
