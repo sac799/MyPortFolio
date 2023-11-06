@@ -11,6 +11,9 @@ export class ContactComponent implements OnInit {
     email: 'sacpatil799@gmail.com',
     linkedin: 'https://www.linkedin.com/in/sachin-patil-5019b7139/',
     github: 'https://github.com/sac799',
+    publications: 'IJARCEE',
+    publications_link:
+      'https://www.ijarcce.com/upload/2016/november-16/IJARCCE%20116.pdf',
   };
 
   notificationMessage: string = '';
@@ -20,7 +23,6 @@ export class ContactComponent implements OnInit {
   ngOnInit(): void {}
 
   openLink(link: string) {
-    // Open the provided link in a new tab
     window.open(link, '_blank');
   }
 }

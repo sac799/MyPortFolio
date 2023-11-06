@@ -10,6 +10,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { AcademicProjectsComponent } from './academic-projects/academic-projects.component';
 import { BlogsComponent } from './blogs/blogs.component';
+import { OtherProjectsComponent } from './other-projects/other-projects.component';
 
 @NgModule({
   declarations: [
@@ -20,6 +21,7 @@ import { BlogsComponent } from './blogs/blogs.component';
     WorkExperienceComponent,
     AcademicProjectsComponent,
     BlogsComponent,
+    OtherProjectsComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],

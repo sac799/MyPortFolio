@@ -18,6 +18,8 @@
       <h2>Contact Information</h2>
       <p>Phone: {{ contact.phone }}</p>
       <p>Email: {{ contact.email }}</p>
+      <p>Publication: <a [href]="contact.publications_link" target="_blank">{{ contact.publications }}</a>
+      </p>
       <a [href]="contact.linkedin" target="_blank">
         <img class="icon" src="assets/linkedin-image.png" alt="LinkedIn" (click)="openLink(contact.linkedin)" />
       </a>

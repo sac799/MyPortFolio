@@ -1,6 +1,4 @@
 <body class="welcome">
-  <span id="splash-overlay" class="splash"></span>
-  <span id="welcome" class="z-depth-4"></span>
   <nav class="navbar navbar-expand-lg navbar-light">
     <div class="container">
       <a class="navbar-brand" href="#">Sachin Patil</a>
@@ -16,8 +14,15 @@
           <li class="nav-item">
             <a class="nav-link" routerLink="/work-experience">Work Experience</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" routerLink="/academic-projects">Academic Projects</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+              aria-haspopup="true" aria-expanded="false">
+              Projects
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+              <a class="dropdown-item" routerLink="/academic-projects">Academic Projects</a>
+              <a class="dropdown-item" routerLink="/other-projects">Other Projects</a>
+            </div>
           </li>
           <li class="nav-item">
             <a class="nav-link" routerLink="/blogs">Blogs</a>
@@ -27,7 +32,6 @@
           </li>
         </ul>
       </div>
-      <!-- Right-aligned buttons with space  -->
       <div class="ml-auto d-flex gap-2">
         <a class="btn btn-dark" href="https://sac799.github.io/text_to_speech_app/" target="_blank">Text to Speech
           App</a>

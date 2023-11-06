@@ -7,6 +7,7 @@ import { SkillsComponent } from './skills/skills.component';
 import { WorkExperienceComponent } from './work-experience/work-experience.component';
 import { AcademicProjectsComponent } from './academic-projects/academic-projects.component';
 import { BlogsComponent } from './blogs/blogs.component';
+import { OtherProjectsComponent } from './other-projects/other-projects.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent }, // Default route, maps to AppComponent
@@ -14,6 +15,7 @@ const routes: Routes = [
   { path: 'skills', component: SkillsComponent },
   { path: 'work-experience', component: WorkExperienceComponent },
   { path: 'academic-projects', component: AcademicProjectsComponent },
+  { path: 'other-projects', component: OtherProjectsComponent },
   { path: 'blogs', component: BlogsComponent }
 ];
 
