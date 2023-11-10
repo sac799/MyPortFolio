@@ -1,108 +1,50 @@
-HTML CSS JSResult Skip Results Iframe
-EDIT ON
-/* Dark theme colors */
-
-/* Primary theme colors */
-body[data-theme='light_theme'] {
-  --white: #fff;
-  --bg-color: #f8f8f8;
-  --color: #333;
-  --secondary-color: #ff7f57;
-  --icon-bg-color: #333;
-  --icon-color: #333;
+.work-experience-card {
+  background-color: #007bff;
+  color: white;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  padding: 15px;
+  margin: 10px;
+  width: 300px;
+  height: 300px;
+}
+.modal-backdrop {
+  opacity: 0.5;
 }
 
-body {
-  background: var(--bg-color);
-  color: var(--color);
-  text-align: center;
+.fade {
+  transition: opacity 0.5s;
 }
 
-body[data-theme="dark_theme"] {
-  --white: #fff;
-  --bg-color: #000;
-  --color: #fff;
-  --secondary-color: #ff7f57;
-  --icon-bg-color: #333;
-  --icon-color: #fff;
+.modal-title {
+  font-size: 20px;
+  font-weight: bold;
+  text-transform: capitalize;
 }
 
-@keyframes fadeIn {
-  from {
-    top: 20%;
-    opacity: 0;
-  }
-  to {
-    top: 100;
-    opacity: 1;
-  }
+.modal-body {
+  font-size: 16px;
 }
 
-@-webkit-keyframes fadeIn {
-  from {
-    top: 20%;
-    opacity: 0;
-  }
-  to {
-    top: 100;
-    opacity: 1;
-  }
+.modal.fade .modal-dialog {
+  transform: translate(0, -50%);
+  opacity: 0;
+  transition: transform 0.2s ease-in-out, opacity 0.2s ease-in-out;
 }
 
-.wrapper {
-  position: absolute;
-  left: 50%;
-  top: 50%;
-  transform: translate(-50%, -50%);
-  -webkit-transform: translate(-50%, -50%);
-  animation: fadeIn 1000ms ease;
-  -webkit-animation: fadeIn 1000ms ease;
+.modal.fade.show .modal-dialog {
+  transform: translate(0, 0);
+  opacity: 1;
 }
 
-h1 {
-  font-size: 64px;
-  font-family: "Poppins", sans-serif;
-  margin-bottom: 0;
-  line-height: 1;
-  font-weight: 700;
+.modal-open {
+  filter: blur(5px);
 }
-
-.dot {
-  color: var(--secondary-color);
+.blur-background {
+  filter: blur(5px);
+  transition: filter 0.3s ease-in-out;
 }
-
-p {
-  text-align: center;
-  margin: 18px;
-  font-family: "Muli", sans-serif;
-  font-weight: normal;
-}
-
-.icons {
-  text-align: center;
-}
-
-.icons i {
-  color: var(--white);
-  background: var(--icon-bg-color);
-  height: 15px;
-  width: 15px;
-  padding: 13px;
-  margin: 0 10px;
-  border-radius: 50px;
-  border: 2px solid transparent;
-  transition: all 200ms ease;
-  text-decoration: none;
-  position: relative;
-}
-
-.icons i:hover,
-.icons i:active {
-  color: var(--icon-color);
-  background: none;
-  border-color: var(--icon-bg-color);
-  cursor: pointer !important;
-  transform: scale(1.2);
-  -webkit-transform: scale(1.2);
-  text-decoration: none;
+.custom-image {
+  max-width: 100%;
+  height: 300px;
 }

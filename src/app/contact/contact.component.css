@@ -78,3 +78,10 @@ a {
     transform: scale(1);
   }
 }
+
+
+.footer {
+  margin-top: 20px;
+  text-align: center;
+  color: #777; /* Adjust the color as needed */
+}

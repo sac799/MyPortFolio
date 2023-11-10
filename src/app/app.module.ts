@@ -11,6 +11,7 @@ import { WorkExperienceComponent } from './work-experience/work-experience.compo
 import { AcademicProjectsComponent } from './academic-projects/academic-projects.component';
 import { BlogsComponent } from './blogs/blogs.component';
 import { OtherProjectsComponent } from './other-projects/other-projects.component';
+import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 
 @NgModule({
   declarations: [
@@ -21,7 +22,8 @@ import { OtherProjectsComponent } from './other-projects/other-projects.componen
     WorkExperienceComponent,
     AcademicProjectsComponent,
     BlogsComponent,
-    OtherProjectsComponent
+    OtherProjectsComponent,
+    SplashScreenComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
   providers: [],
