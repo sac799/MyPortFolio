@@ -12,6 +12,9 @@ import { AcademicProjectsComponent } from './academic-projects/academic-projects
 import { BlogsComponent } from './blogs/blogs.component';
 import { OtherProjectsComponent } from './other-projects/other-projects.component';
 import { SplashScreenComponent } from './splash-screen/splash-screen.component';
+import { EcommComponent } from './ecomm/ecomm.component';
+import { NgxPaginationModule } from 'ngx-pagination';
+import { ProductDetailComponent } from './product-detail/product-detail.component';
 
 @NgModule({
   declarations: [
@@ -23,9 +26,11 @@ import { SplashScreenComponent } from './splash-screen/splash-screen.component';
     AcademicProjectsComponent,
     BlogsComponent,
     OtherProjectsComponent,
-    SplashScreenComponent
+    SplashScreenComponent,
+    EcommComponent,
+    ProductDetailComponent
   ],
-  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule],
+  imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule, NgxPaginationModule],
   providers: [],
   bootstrap: [AppComponent],
 })
