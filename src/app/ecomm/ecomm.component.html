@@ -24,7 +24,7 @@
                 <div class="row">
                     <div *ngFor="let product of products | paginate: { itemsPerPage: 8, currentPage: p }"
                         class="col-md-3 mb-4">
-                        <div class="card h-100 product-card" (click)="openProductModal(product)">
+                        <div class="card h-100 product-card" (click)="showProductDetail(product.id)">
                             <img [src]="product.image" alt="{{ product.title }}" class="img-fluid product-image">
                             <div class="card-body">
                                 <h5 class="card-title">{{ product.title }}</h5>
@@ -35,7 +35,7 @@
                                     <span>{{ product.rating.count }} ratings</span>
                                 </div>
                             </div>
-                            <button class="btn btn-primary mr-2" (click)="openProductModal(product)">Open</button>
+                            <button class="btn btn-primary mr-2" (click)="showProductDetail(product.id)">Open</button>
                         </div>
                     </div>
                 </div>

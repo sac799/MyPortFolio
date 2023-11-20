@@ -19,7 +19,7 @@ const routes: Routes = [
   { path: 'other-projects', component: OtherProjectsComponent },
   { path: 'blogs', component: BlogsComponent },
   { path: 'ecomm', component: EcommComponent },
-  { path: 'product-details', component: ProductDetailComponent }
+  { path: 'product-detail/:id', component: ProductDetailComponent }
 ];
 
 @NgModule({

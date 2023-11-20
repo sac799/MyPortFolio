@@ -1,5 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
+import { Router } from '@angular/router';
+import { ProductService } from '../product.service';
 
 @Component({
   selector: 'app-ecomm',
@@ -14,7 +16,7 @@ export class EcommComponent implements OnInit {
 
   showModal = false;
 
-  constructor(private http: HttpClient) {}
+  constructor(private http: HttpClient, private router: Router, private productService: ProductService) {}
 
   ngOnInit(): void {
     this.loadProducts();
@@ -53,5 +55,9 @@ export class EcommComponent implements OnInit {
   closeProductDetail() {
     this.selectedProduct = null;
     this.showModal = false;
+  }
+
+  showProductDetail(productId: number): void {
+    this.router.navigate(['/product-detail', productId]);
   }
 }
