@@ -1,0 +1,33 @@
+<div class="wrap">
+    <h1 class="projTitle">Welcome to Chekcout Area</h1>
+    <div class="heading cf d-flex justify-content-between">
+        <h1>My Cart</h1>
+        <button class="btn btn-success float-right" (click)="goToEcomm()">Continue Shopping</button>
+        <button class="btn btn-success float-right" (click)="deleteAll()">Delete All</button>
+    </div>
+
+    <div class="cart">
+        <ul class="cartWrap">
+            <li *ngFor="let item of cartItems" [class]="item.stockStatus === 'out' ? 'items odd' : 'items even'">
+                <div class="infoWrap">
+                    <div class="cartSection">
+                        <img [src]="item.image" alt="" class="itemImg" />
+                        <p class="itemNumber">#{{ item.id }}</p>
+                        <h3>{{ item.title }}</h3>
+                        <p> <input type="text" class="qty" placeholder="{{ item.quantity }}" /> x ${{ item.price }}</p>
+                        <p class="stockStatus" [ngClass]="{ 'out': item.stockStatus === 'out' }">{{ item.stockStatus }}
+                        </p>
+                    </div>
+
+                    <div class="prodTotal cartSection">
+                        <p>${{ item.price * item.quantity | number: '1.2-2' }}</p>
+                    </div>
+
+                    <div class="cartSection removeWrap">
+                        <a class="remove">x</a>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -9,6 +9,7 @@ import { BlogsComponent } from './blogs/blogs.component';
 import { OtherProjectsComponent } from './other-projects/other-projects.component';
 import { EcommComponent } from './ecomm/ecomm.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { CartComponent } from './cart/cart.component';
 
 const routes: Routes = [
   { path: '', component: HomeComponent }, // Default route, maps to AppComponent
@@ -19,7 +20,8 @@ const routes: Routes = [
   { path: 'other-projects', component: OtherProjectsComponent },
   { path: 'blogs', component: BlogsComponent },
   { path: 'ecomm', component: EcommComponent },
-  { path: 'product-detail/:id', component: ProductDetailComponent }
+  { path: 'ecomm/product-detail/:id', component: ProductDetailComponent },
+  { path: 'ecomm/cart', component: CartComponent },
 ];
 
 @NgModule({

@@ -1,7 +1,7 @@
 import { HttpClient } from '@angular/common/http';
 import { Component, OnInit } from '@angular/core';
 import { Router } from '@angular/router';
-import { ProductService } from '../product.service';
+import { CartService } from '../cart-service.service';
 
 @Component({
   selector: 'app-ecomm',
@@ -16,7 +16,11 @@ export class EcommComponent implements OnInit {
 
   showModal = false;
 
-  constructor(private http: HttpClient, private router: Router, private productService: ProductService) {}
+  constructor(
+    private http: HttpClient,
+    private router: Router,
+    private cartService: CartService
+  ) {}
 
   ngOnInit(): void {
     this.loadProducts();
@@ -58,6 +62,23 @@ export class EcommComponent implements OnInit {
   }
 
   showProductDetail(productId: number): void {
-    this.router.navigate(['/product-detail', productId]);
+    this.router.navigate(['/ecomm/product-detail', productId]);
+  }
+
+  addtoCart(productId: number, product: any) {
+    console.log('product added to cart: ' + productId);
+
+    this.cartService.addToCart(1, product).subscribe(
+      (response) => {
+        console.log('Added to cart:', response);
+      },
+      (error) => {
+        console.error('Error adding to cart:', error);
+      }
+    );
+  }
+
+  openCart() {
+    this.router.navigate(['/ecomm/cart']);
   }
 }

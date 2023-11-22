@@ -15,6 +15,7 @@ import { SplashScreenComponent } from './splash-screen/splash-screen.component';
 import { EcommComponent } from './ecomm/ecomm.component';
 import { NgxPaginationModule } from 'ngx-pagination';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
+import { CartComponent } from './cart/cart.component';
 
 @NgModule({
   declarations: [
@@ -28,7 +29,8 @@ import { ProductDetailComponent } from './product-detail/product-detail.componen
     OtherProjectsComponent,
     SplashScreenComponent,
     EcommComponent,
-    ProductDetailComponent
+    ProductDetailComponent,
+    CartComponent
   ],
   imports: [BrowserModule, AppRoutingModule, FormsModule, HttpClientModule, NgxPaginationModule],
   providers: [],
